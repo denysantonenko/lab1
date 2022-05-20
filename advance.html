@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/test.css" />
+    <title>Google Search</title>
+  </head>
+  <body>
+    <header class="header">
+        <div class="container">
+        <img class="img" src="img/logo.png" alt="">
+      <ul class="header-ul">
+        <li><a href="index1.html">Головна</a></li>
+        <li><a href="img.html">Пошук по зображеням</a></li>
+        <li><a href="advance.html" class="active">Пошук розширенний</a></li>
+      </ul>
+    </div>
+    </header>
+
+    <section class="main">
+        <p class="header-p">Розширений пошук зображень</p>
+
+      <p>Знайти зображення, що містять...</p>
+      <div class="list">
+      <ul class="ul">
+          <li class="li">усі ці слова:</li>
+          <li class="li">точне слово або фразу:</li>
+          <li class="li">будь-яке з цих слів:</li>
+          <li class="li">жодне з цих слів:</li>
+      </ul>
+    <div class="block">
+      <form action="https://www.google.com/search" method="get">
+        <input class="input" type="text" name="as_q" required />
+        <input class="input" type="text" name="as_epq" required />
+        <input class="input" type="text" name="as_oq" required />
+        <input class="input" type="text" name="as_eq" required />
+        <button class="button" type="submit" value="Google Search">Розширенний пошук</button>
+    </div>
+</div>
+    </section>
+  </body>
+</html>
